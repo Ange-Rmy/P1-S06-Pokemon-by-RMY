@@ -1,0 +1,163 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: rgb(0, 68, 136);
+}
+#container{
+    background-color: #FFFFFF;
+    margin: auto;
+    width: 80%;
+    padding: 25px;
+}
+/*START HEADER*/
+header{
+    height: 250px;
+}
+
+#header_title{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+}
+#header_logo img{
+    width: 4.5em;
+}
+h1{
+    color: rgb(0, 68, 136);
+    font-size: 5em;
+    text-align: center;
+}
+#menu_container{
+    display: flex;
+    font-size: 2em;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+}
+.menu_item{
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    gap: 20px;
+}
+#searchbar{
+    justify-content: flex-end;
+}
+
+/*END HEADER*/
+
+/*START MAIN*/
+
+main{
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas:
+    "Muk Muk Lileep Lileep"
+    "Eau Eau Terre Terre"
+    "Feu Feu Pub1 Pub2";
+    font-size: 1.25em;
+}
+#week_pokemon{
+    display: flex;
+    background-color: rgb(238, 232, 170);
+    padding: 20px;
+    border: 1px solid #808080;
+    align-items: center;
+    grid-area: Muk;
+    gap: 25px;
+}
+#unknown_pokemon{
+    display: flex;
+    background-color: rgb(238, 232, 170);
+    padding: 20px;
+    align-items: center;
+    grid-area: Lileep;
+    border: 1px solid #808080;
+    gap: 25px;
+}
+.description{
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #808080;
+}
+
+main img {
+    height: 90px;
+    border: 1px solid #808080;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+#type1{
+    padding: 10px;
+    grid-area: Eau;
+    border: 1px solid #808080;
+    background-image: url("../images/eau.jpg");
+}
+#type2{
+    padding: 10px;
+    grid-area: Terre;
+    border: 1px solid #808080;
+    background-image: url("../images/terre.jpg");
+}
+
+#type3{
+    padding: 10px;
+    grid-area: Feu;
+    border: 1px solid #808080;
+    background-image: url("../images/feu.jpg");
+}
+.type_content{
+    background: rgb(255, 255, 255, 0.85);
+    margin: 20px;
+    padding: 10px;
+}
+
+#pub1 {
+    text-align: center;
+    grid-area: Pub1;
+    border: 1px solid #808080;
+    background: rgb(219, 213, 213);
+    padding: 10px;
+}
+#pub1 img{
+    padding: 15px;
+    background: #FFFFFF;
+    width: auto;
+    height: 100px;
+    border: #808080 solid 1px;
+}
+#pub1 a{
+    color: red;
+}
+
+#pub2 {
+    text-align: center;
+    grid-area: Pub2;
+    border: 1px solid #808080;
+    background: rgb(219, 213, 213);
+    padding: 10px;
+}
+#pub2 img{
+    padding: 15px;
+    background: #FFFFFF;
+    width: auto;
+    height: 100px;
+    border: #808080 solid 1px;
+}
+#pub2 a{
+    color: red;
+}
+/*END MAIN*/
+footer{
+    text-align: center;
+    font-size: 2em;
+    margin: 25px;
+}
